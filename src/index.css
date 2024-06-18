@@ -49,3 +49,14 @@ img {
   max-width: 100%;
   height: auto;
 }
+.btn {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: lightcoral;
+  transition: all 0.2 ease-in-out;
+  &:hover {
+    background-color: lavender;
+    color: black;
+  }
+}

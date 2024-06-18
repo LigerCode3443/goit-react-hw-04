@@ -1,3 +1,10 @@
+import s from "./LoadMore.module.css";
 export const LoadMore = ({ handleLoadMore }) => {
-  return <button onClick={handleLoadMore}>Load More</button>;
+  return (
+    <div className={s.box}>
+      <button onClick={handleLoadMore} className="btn">
+        Load More
+      </button>
+    </div>
+  );
 };

@@ -1,11 +1,12 @@
-export const ImgCard = ({ alt_description, urls }) => {
+import s from "./ImgCard.module.css";
+export const ImgCard = ({ alt_description, urls, modalIsOpen }) => {
   return (
     <>
       <img
-        src={urls.regular}
+        className={s.img}
+        src={urls.small}
         alt={alt_description}
-        className=""
-        width="350px"
+        onClick={() => modalIsOpen({ alt_description, urls: urls.regular })}
       />
     </>
   );
